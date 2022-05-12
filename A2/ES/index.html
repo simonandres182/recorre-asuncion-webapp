@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/ES','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Catedral Metropolitana de Nuestra Señora de la Asunción</h2>
+            <p><img src="A2.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A2ES.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>La Catedral Metropolitana de Asunción, ubicada en el Centro Histórico de la ciudad, fue la primera Diócesis del Río de la Plata. Asentada desde la época colonial, es uno de los edificios más emblemáticos de la capital, con su peculiar forma.</p>
+
+            <p>Además de los rústicos materiales empleados para su construcción (Adobe y palmas) debió pasar por varias transformaciones desde el año 1539, año de su primera construcción. También debido a las incipientes lluvias y crecidas del río Paraguay en cada lapso de tiempo se debía derribar la construcción y cambiar por otra nueva.</p>
+                
+            <p>El último y actual modelo edilicio se construyó a mediados del S. XIX durante el gobierno del presidente Carlos Antonio López.</p>
+                
+            <p>El último y actual modelo edilicio se construyó durante el gobierno del presidente Carlos Antonio López, quien, en el año 1842, "mandó que se derribe la antigua Catedral para edificar otra nueva en el mismo sitio con mejor arquitectura que otro alguno". Según los historiadores indican que el verdadero autor del diseño fue el Maestro Arquitecto Pascual Urdapilleta. En el año 1845, las obras estaban muy avanzadas, tal es así que aún sin culminar, el 27 de octubre del mismo año, se inaugura y bendice el edificio.</p>
+                
+            <p>El libro “Templos de Asunción” de la Historiadora Margarita Durán Estragó dice: "El templo consta de tres naves, separadas por dos filas de arcos de medio punto con pilastras estriadas". En época del presidente Don Carlos Antonio López, aparece en escena la nueva tecnología que deja de lado a la madera como estructura portante para dar lugar a la mampostería de diferentes espesores y el hierro como parte de la estructura.</p>
+                
+            <p>Desde el punto de vista de la tecnología en la Arquitectura hay un avance en tanto se deja de lado la estructura portante colonial, que consistía en muros de adobe y palma, para dar espacios a los muros portantes de mampostería de ladrillos cerámicos y revocados, asimismo se utiliza el hierro que permite mayores longitudes entre los apoyos estructurales. También en el aspecto formal hay una diferencia, se deja atrás el patrón edilicio de la época colonial para dar lugar a un patrón edilicio que se caracteriza por la transición hacia una arquitectura de fachada en temas religiosos y habitacionales, aunque sin dejar de lado la Arquitectura paraguaya de galerías perimetrales, adoptando columnas de mampostería de formas octogonales que reemplazan a las columnas de madera y otros.</p>
+                
+            <p>Si bien la fachada principal de esta Iglesia es estilo Neoclásico de extrema sobriedad, con reminiscencias a las Iglesias Jesuíticas de Europa, el edificio en su totalidad debe ser considerado de estilo ecléctico, es decir, de fachada Neoclásica y planta arquitectónica Colonial (con galerías exteriores).</p>
+                
+            <p>La planta de esta Catedral tiene forma rectangular y mide aproximadamente 80m de largo x 32m de ancho.</p>
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Our Lady of the Assumption City</h2>
+            <p><img src="A11.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A11EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>Mother of cities, because from this place the Spaniards whose expeditions went with the indigenous people went out to conquer and found new lands.</p>
+
+            <p>In this place the Spanish met the Guarani Indian, with whom he was able to negotiate his permanence in peaceful lands, the Spanish had difficulty expanding and only managed to do so by negotiating with the Guarani, thus the mestizos were born.</p>
+                
+            <p>Pre Colonial
+                This area was initially occupied by the Guarani, who according to the historian Fulgencio R. Moreno the Guarani denomination means "war".</p>
+                
+            <p>Those Guarani had nomadic and ferocious tribes as neighbors, above such, the Guarani were constituted by their greater solidarity, organization and intellectual development.</p>
+                
+            <p>Alejo García passed through the region of Paraguay in 1524, he would be the first European to pass through the Eastern region and reach the Chaco. In pursuit of this news Sebastián Gaboto moved, shortly after his route to the Moluccas and arrived in Paraguay. With the news of riches that were in the new world, the great expedition of Don Pedro de Mendoza departed from Spain, arriving at the place where the first foundation of Buenos Aires was made, in the year 1536.</p>
+                
+            <p>García and Gaboto had explored the rivers above the Paraná. The great river was called indistinctly "Río Paraguay and Río de la Plata", as soon as possible Mendoza dispatched an expedition under the command of Juan de Ayolas, to go up the river, searching busily for the famous mountains mentioned above.</p>
+                
+            <p>Colonial period
+                On August 15, 1537, it was founded as a military fort by Juan de Salazar y Espinosa. The founding act was dated September 16, 1541, when its council was instituted by Lieutenant Governor Domingo Martínez de Irala, an act that elevated it to the category of city.</p>
+                
+            <p>Where the city is located today was initially inhabited by indigenous people from the Carios family. The fort called Nuestra Señora de la Asunción was founded on August 15, 1537 by Juan de Salazar de Espinosa, who had just gone in search of Ayolas.</p>
+                
+            <p>Independent Period
+                On May 14, the road to independence began, led by Captain Pedro Juan Caballero, the heroes placed eight cannons in front of the house of Governor Bernardo de Velasco, who surrendered.</p>
+                
+            <p>During the government of José Gaspar Rodríguez de Francia, most of the center was demolished to rebuild the urban plan in the form of a grid. After the War of the Triple Alliance, Asunción was occupied by Brazilian and allied troops since January 1869, the Allied occupation, in this case that of the Brazilian army, would last until 1876.</p>
+                
+            <p>20th century to the present
+                The “Defensores del Chaco” stadium owes its name precisely to the fact that the army that would go to defend the Chaco was recruited in this place.</p>
+                
+            <p>Since 1993, Asunción has become an autonomous municipality administered as a capital district and is not formally integrated into any department.</p>
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

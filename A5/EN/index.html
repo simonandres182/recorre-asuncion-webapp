@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Municipal Theater “Ignacio A. Pane”</h2>
+            <p><img src="A5.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A5EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>Built in 1843, this large mansion initially housed the session room of the National Congress, at that time the main access was on Avenida El Paraguayo Independiente.</p>
+
+            <p>The sessions then move to the Cabildo building, then, President Carlos Antonio López, requests the playwright Ildefonso Antonio Bermejo, the opening of a theater. He himself elaborated a project and built the building, which, once completed, would be the headquarters of the theater in 1855. Since then, it was the center of culture in terms of theater and music for the Asuncions.</p>
+                
+            <p>During the War against the Triple Alliance, the theater continued to function to the best of its ability. In 1886, the municipal authorities accepted the proposal of Mr. Baudilio Alló, a businessman of Catalan origin, who obtained the concession for the theater and Plaza Libertad to erect a new building there, thus the construction of the National Theater began, culminating in the year 1889.</p>
+                
+            <p>In 1894, the work of Alló, which was the extension of the work of Ildefonso A. Bermejo, was left in the hands of society, boxes were introduced and the patios were beautified. In 1939, it became the domain of the municipality of Asunción and became the Municipal Theater.</p>
+                
+            <p>During the first half of the 20th century there was no building in Asunción dedicated to culture with the glories of the Municipal Theater. Between the years 1940 and 1960, the stage of the Municipal Theater brought together most of the theatrical performances in Paraguay. It was already known as Ignacio A. Pane Theater. In the year 1995 it was closed for repairs and restorations, which began in the year 1997. The works continued until the works were completed in their entirety, and thus in the year 2006, the "Ignacio A. Pane" theater was officially enabled. for its use and recovered the brightness of its former glories with a building renovation that today is the pride of the city and with programming that pleases the general public.</p>
+                
+            <p>Although the building maintained its essential characteristics, it is possible to observe the complementation of the old construction with the new extensions that comprise the building that overlooks El Paraguayo Independiente Avenue, corner of Nuestra Señora de la Asunción.</p>
+                
+            <p>Thanks to the fact that Asunción has its open theater, artists and musicians on tour, arrive and contribute significantly to the formation of the taste of the demanding Paraguayan public. The Municipal Theater has always been in the memory of the Paraguayan, for the artistic and political manifestations.</p>
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

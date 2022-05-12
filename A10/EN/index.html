@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Lopez Palace, Government Palace</h2>
+            <p><img src="A10.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A10EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>Lázaro Rojas, gave his godson, Francisco Solano López, two hectares of land on the coast of the Paraguay River, over the years and acceding to the presidency of Paraguay, he prepared his residence on that site. The Paraguay of that time received great professionals in engineering and architecture.</p>
+
+            <p>In 1867 the residence of Marshal López was almost finished. The war also caused the enemies to point their cannons at the building, suffering considerable damage that would remain immortalized in the first photographs of the 19th Century War. In 1869 the occupation of Asunción and looting began. Converted from that moment into a Brazilian barracks, until the end of the occupation in 1876. In 1890 its reconstruction began, and it was inaugurated in 1892, becoming the seat of the Paraguayan government.</p>
+                
+            <p>Lopez Palace. It is bounded by El Paraguayo Independiente Avenue, and Ayolas and Juan E. O'Leary streets.</p>
+                
+            <p>The first plans were drawn up by Ing. Francisco Wissner de Morgensten of Hungarian nationality, hired by President Don Carlos Antonio López. In 1857 work began under the direction of Arch. Alonso Taylor of English nationality. Some historians affirm that it was carried out by Alejandro Ravizza (1861). In 1864 the building was under construction when the War against the Triple Alliance began; General Francisco Solano López had to leave Asunción without being able to inaugurate his future residence, the Palace was practically finished in 1867. In 1869 the Allied invasion of Asunción took place and looting began, the Palace, which had previously suffered considerable damage from the shot by an allied cannonball, it became a Brazilian barracks with the invasion until the end of the occupation in 1876. The decorations were confiscated and transferred to Brazil. Much of the appropriate personal property has yet to be recovered. After the withdrawal of the Brazilian troops, the Palace was abandoned until the resumption of work in 1890. On October 12, 1892, it was enabled during the presidency of Juan Gualberto González.</p>
+                
+            <p>The Palace was used as the government seat since 1894, it was the presidential residence until the 40s of the last century.</p>
+                
+            <p>A new cultural pattern is gradually introduced that is characterized as a transition towards classicism, with the introduction of new materials such as: iron, granite and marble, all imported. The concept of Facade Architecture begins, also the concept of: "Monumental Architecture".</p>
+                
+            <p>The Architectural plan in U, allows to observe two frontal facades: facade on the Avenida el Paraguayo Independiente and Coastal Facade that looks towards the Paraguay River.</p>
+                
+            <p>In 2011 the original color of the main facades was recovered. Inside the building, the mural paintings, the movable property and the coastal area were recovered.</p>
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

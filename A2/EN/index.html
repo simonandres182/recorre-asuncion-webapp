@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Metropolitan Cathedral of Our Lady of the Assumption</h2>
+            <p><img src="A2.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A2EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>The Metropolitan Cathedral of Asunción, located in the Historic Center of the city, was the first Diocese of the Río de la Plata. Settled since colonial times, it is one of the most emblematic buildings in the capital, with its peculiar shape.</p>
+
+            <p>In addition to the rustic materials used for its construction (Adobe and palm trees), it must have undergone several transformations since 1539, the year of its first construction. Also due to the incipient rains and floods of the Paraguay River in each period of time, the construction had to be demolished and changed for a new one.</p>
+                
+            <p>The last and current building model was built in the middle of the 19th century during the government of President Carlos Antonio López.</p>
+                
+            <p>The last and current building model was built during the government of President Carlos Antonio López, who, in 1842, "ordered the old Cathedral to be demolished to build a new one on the same site with better architecture than any other." According to historians, they indicate that the true author of the design was the Master Architect Pascual Urdapilleta. In the year 1845, the works were very advanced, so much so that even without culminating, on October 27 of the same year, the building was inaugurated and blessed.</p>
+                
+            <p>The book "Temples of Asunción" by Historian Margarita Durán Estragó says: "The temple consists of three naves, separated by two rows of semicircular arches with fluted pilasters." In the time of President Don Carlos Antonio López, new technology appears on the scene that leaves aside wood as a load-bearing structure to give way to masonry of different thicknesses and iron as part of the structure.</p>
+                
+            <p>From the point of view of technology in Architecture there is progress insofar as the colonial load-bearing structure, which consisted of adobe and palm walls, is left aside, to give spaces to the load-bearing walls of ceramic brick masonry and plaster, also iron is used, which allows greater lengths between the structural supports. There is also a difference in the formal aspect, the building pattern of the colonial era is left behind to give rise to a building pattern that is characterized by the transition towards a facade architecture in religious and housing themes, although without neglecting the Architecture paraguaya of perimeter galleries, adopting masonry columns of octagonal shapes that replace wooden columns and others.</p>
+                
+            <p>Although the main façade of this Church is of an extremely sober Neoclassical style, reminiscent of the Jesuit Churches of Europe, the building as a whole must be considered eclectic in style, that is, with a Neoclassical façade and a Colonial architectural plan (with external galleries).</p>
+                
+            <p>The plan of this Cathedral is rectangular in shape and measures approximately 80m long x 32m wide.</p>
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

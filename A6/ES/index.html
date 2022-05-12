@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/ES','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>RIUS & JORBA, Secretaría Nacional de Turismo</h2>
+            <p><img src="A6.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A6ES.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>Entre las casas comerciales, la Sociedad Anónima Rius y Jorba de Don Juan Rius y de Don Marcelino Jorba, era la más importante. Fue fundada en 1872 y operaba en casi todos los rubros de importación, desde los vestidos hasta los ramos de ferretería, bazar y almacenes generales. La sociedad, refundada en 1909, con la incorporación de otros socios, también fue dueña del Teatro Granados.</p>
+
+            <p>El frente de la propiedad, sobre la calle Palma, corresponde al sitio ocupado actualmente por la Secretaría Nacional de Turismo, mientras que sobre la calle presidente Franco, el edificio todavía muestra una de las más bellas creaciones del art-decó local.</p>
+                
+            <p>La Secretaría Nacional de Turismo SENATUR se crea el día 30 de diciembre de 1998, institución que tiene como labor principal ejecutar la política nacional de turismo, orientando, promoviendo, facilitando y regulando el desarrollo del turismo en el Paraguay, en beneficio de visitantes y de la ciudadanía en general.</p>
+                
+            <p>Su recinto principal está ubicado sobre una de las calles más importantes del Centro Histórico de Asunción, la calle Palma y además acoge en su interior a “El Turista Roga”, punto estratégico para los turistas, ya que en este sitio se encuentra una exposición permanente de productos artesanales de todo el país, y también ofrece información turística al visitante todos los días de la semana.</p>
+                
+                
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

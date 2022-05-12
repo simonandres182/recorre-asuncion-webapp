@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Monsignor Juan Sinforiano Bogarin Museum</h2>
+            <p><img src="A3.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A3EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>Initially the mansion belonged to the Yegros family, then it was part of the country's prison system. Later it was part of the Conciliar Seminary and later housed the Vincentian Sisters who founded La Providencia School until their subsequent move.</p>
+
+            <p>The property became the Catholic University of Our Lady of the Assumption, and was recovered to be a Museum that functioned in the Metropolitan Curia, until the death of Monsignor Juan Sinforiano Bogarín. By his will, he was transferred to the Metropolitan Seminary. In the month of August 1958, Monsignor Agustín Blujaki took charge of the collection.</p>
+                
+            <p>The Museum of Sacred Art was born from the pastoral tours of the first Archbishop of Paraguay, Monsignor Juan Sinforiano Bogarín, at the end of the 19th and 20th centuries. Where it exhibits carvings from the old Jesuit missions, Franciscan carvings, collections from the colonial era and the 20th century, pieces related to the national history of the time of the War against the Triple Alliance, Post-war Paraguay, Presidency of Don Carlos Antonio López, from the Chaco War, Sacred Art objects, ethnographic and archaeological collections, of great value, initiated by the Ethnographer and Archaeologist José Antonio Gómez Perasso, expanded and enriched by the indigenous communities.</p>
+                
+            <p>The classification and adaptation of the collection of the Bogarín Museum was carried out in 1994 with the installation of thematic rooms: Jesuit Room, Popular Art Room of the 19th and 20th centuries, Franciscan Room, Sacred Art Room, National History Room and Thematic Exhibition Room.</p>
+                
+            <p>By disposition of Monsignor Pastor Cuquejo, the collection of the Museum was incorporated into the Bogarín Museum: Treasure of the Cathedral of Asunción Monsignor Agustín Blujaki. The Treasure Museum of the Cathedral has more than 400 pieces in its collection, among which the Silverware of the Cathedral of Asunción stands out. The Juan Sinforiano Bogarín Museum has more than 1,300 museum pieces.</p>
+                
+            <p>Architect Ramón Duarte Burró, member of the National Commission for the Cultural Assets of the Church explains: "The purpose of the Institution is the Conservation of the Artistic and Cultural Heritage of the Church and also objects related to the History of the nation"</p>
+                
+            <p>The construction is typical of the Colonial era, with an interior gallery. The main facade located on the alley, is simple, without ornaments, the use of load-bearing construction structures and simple spatial organizations is rescued. It belongs to the heritage of the style of the eighteenth and nineteenth centuries.</p>
+                
+            <p>Architectural plan in U: The building is located in an area that today belongs to the Catholic University, which is accessed through the Alley next to the Cathedral of Asunción, through an old solid wood door, which leads to a hall and interior distribution gallery.</p>
+                
+            <p>It was in 1979 that the Museum was installed in the place where it is to this day.</p>
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

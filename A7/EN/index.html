@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Benigno López Palace, Ministry of Foreign Affairs</h2>
+            <p><img src="A7.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A7EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>The building was built for the residence of Benigno López Carrillo, one of the sons of the then President of the Republic, Don Carlos Antonio López and Juana Pabla Carrillo. The Italian architect Alessandro Ravizza, known as the Architect of the López family, was hired to carry out the design and construction of said palace in the years 1861-1865.</p>
+
+            <p>In 1868 Mrs. Juana P. Carrillo appeared before the Court as heir to her son Benigno, shot in Lomas Valentinas, then in 1871, when Mrs. Juana Pabla Carrillo died, the property was inherited by her daughters Inocencia and Rafaela Lopez Carrillo.</p>
+                
+            <p>At the end of the War against the Triple Alliance, the house has several successive owners. In 1881, the Catalan Pedro Grau leased it, who together with his brother turned it into the Hispano-American Hotel. At the beginning of the 20th century, the hotel had 72 rooms, banquet halls and even electric light, telephones and fans.</p>
+                
+            <p>During the Chaco War, the building functioned as a Blood Hospital.</p>
+                
+            <p>The property is sold again, and has different owners over time, until in 2003 the Banco de Asunción, who was its owner at that time, requested its voluntary liquidation from the Central Bank of Paraguay and sold it to the Paraguayan State that acquires it through a donation from the Government of Taiwan. The government intended it to be the new headquarters of the Ministry of Foreign Affairs, inaugurated on May 6, 2005.</p>
+                
+            <p>From an architectural point of view, the building corresponds to the neoclassical style, which was the most representative style of architecture during the government of President Carlos A. López. The main rooms or spaces open onto a central patio. There you can see the gallery on the upper floor with semicircular arches. On the ground floor façade you can see Doric order columns, on the upper floor Corinthian pilasters. On the balconies of the upper floor, the use of cast iron bars with filigree designs can be seen.</p>
+                
+            <p>The structure of the building is bounded by 30 columns and richly ornamented round arches. The important internal staircase has artistic ironwork railings. The facade plinths and the bases of the access columns and central courtyard were covered with marble plates, carrying out the same treatment on the floors, main access staircase and those leading to the upper floor. The marble floors and coverings were brought from Europe. The bars of the stairs and external balconies that the building has, were worked on at the La Rosada-Ybycuí Foundry.</p>
+                
+                
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

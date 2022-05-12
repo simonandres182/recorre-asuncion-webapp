@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>National Pantheon of Heroes and Oratory of the Virgin Our Lady Santa María de la Asunción</h2>
+            <p><img src="A1.jpeg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A1EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>Built under the Presidency of Francisco Solano López on October 13, 1863, it was dedicated to the Virgin Our Lady of the Assumption, patron saint of this city.</p>
+
+            <p>The work began in the first days of January 1864 under the direction of the Italian architect Alessandro Ravizza, but shortly after it was suspended for more than 70 years due to the start of the War against the Triple Alliance.</p>
+                
+            <p>Finally, on October 12, 1936 it was inaugurated, also becoming the National Pantheon of Heroes since the ashes of Marshal Solano López and the Unknown Soldier of the Chaco War, among other worthy heroes of the Homeland, rest here since then.</p>
+                
+            <p>It should be noted that this culmination occurred during the mandate of the then Mayor of Asunción José P. Guggiari. The direction of the final works was in charge of the Polish engineer Bruno Paproscky, with the collaboration of the Paraguayan professionals Paleari, Bedoya, Pastor Gómez and Roque Saldívar y Alfaro.</p>
+                
+            <p>On March 1, 1939, the ashes of the remains of some heroes of independence and some heroes of both the Triple Alliance war and the Chaco war were moved.</p>
+                
+            <p>Later, the marble altar was placed in the center of which stands the image of the Virgin of the Assumption, which was transferred from the house of the "mayordoma" Doña María Haedo widow of Abente. This was acquired from a workshop in Naples, in 1742, by the canon of the Cathedral, Don Antonio Delgadillo y Atienza.</p>
+                
+            <p>In the year 1950, Pope Pius XII defined the Dogma of the Assumption of the Blessed Virgin Mary. In 1951, the National Government and the Paraguayan Episcopate requested the Pope to proclaim the Virgin Mary of the Assumption as patron saint of the Republic of Paraguay and of the Armed Forces of the Nation.</p>
+                
+            <p>On July 13, 1951, the Pope declares: "Blessed Virgin Mary of the Assumption to heaven, main heavenly Patron before God, of the entire Republic of Paraguay and of the Armed Forces of the Nation." The Patron Saint festival is celebrated every August 15.</p>
+                
+            <p>From an architectural point of view, this work is considered Neoclassical in style.</p>
+                
+            <p>It is inspired by the Monument "Le Panthéon" des Invalides (Paris / France) and Santa Maria de Carignano in Genoa (Italy).
+                Restoration work began in 2011 and the National Secretary of Culture decided to declare the Oratorio Nuestra Señora de la Asunción and the National Pantheon of Heroes as National Cultural Heritage.</p>
+                
+            <P>In its interior rest the remains of important figures of national history:
+                Marshal Francisco Solano Lopez,
+                the unknown soldier,
+                Carlos Antonio López, first constitutional president,
+                General José Eduvigis Díaz Vera, hero of the War of the Triple Alliance,
+                Marshal Jose Felix Estigarribia,
+                Julia Miranda Cueto, former first lady,
+                Children martyrs of the battlefield of Acosta Ñu,
+                Eusebio Ayala, Head of State during the Chaco War,
+                Emiliano R. Fernández, Paraguayan epic poet and musician.</P>
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
