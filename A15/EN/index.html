@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+          $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/EN','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Central Railway Station of Paraguay</h2>
+            <p><img src="A15.jpg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A15EN.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+
+            <p>The initiative to have a railway line in Paraguay came from President Carlos Antonio López in 1854, the first railway line was from Asunción to Villarrica.</p>
+
+            <p>The works began in the year 1857, and the section from Arsenales to the rivera (proximities of the Port of Asunción) was enabled and in the year 1859 it reached the
+                 San Francisco Station located in front of the current Plaza Uruguaya. In that year, the construction of the Central Station began, under the direction of Master
+                  Architect Alonso Taylor, who also directed the construction of the other railway stations. Alessandro Ravizza has had notable participation in the internal and
+                   external decoration of the building.</p>
+            
+            <p>The initiative to have a railway line in Paraguay arose from President Carlos Antonio López in the year 1854, who hired professional engineers of English
+                 nationality (G. Paddison and John W. Whitehead) who were in charge of carrying out of the preliminary studies and the project for the fitting out of the first 
+                 railway line: Asunción –Villarrica</p>
+            
+            <p>In the year 1861, the first section was inaugurated from the Central Station of Asunción to the Trinidad neighborhood and six months later the extension to the
+                 city of Luque was inaugurated. In the year 1862, it extends to Areguá. Later, through the years, it reached Encarnación. In the year 1863, the chronicles of 
+                 that time highlighted the Station as "a recreational point" admiring "the spacious halls with seats and music that are given to passers-by every Sunday".</p>
+            
+            <p>The character of the building under study includes from neo-gothic reminiscences to the integration of clearly Paraguayan proposals such as: The lateral
+                 galleries, and it is defined as one of the works of greatest interest within the architecture of the period of the government of Don Carlos. Anthony Lopez.</p>
+            
+            <p>It has had a museum since 1992, where furniture containing documents and voluminous technical and accounting books are exhibited, in addition, the
+                 initials stand out on the furniture. Carved FCCP. In one of the showcases, original plans of the tracks from Asunción to the Ferry boat of 
+                 Encarnación are exhibited, the original plans of the locomotives are also exhibited, wall clocks, safes brought from England, photographic catalogs of
+                  the locomotives and wagons designed for Paraguay among other things. Also on the main platform is the restored Locomotive (year 2000)</p>
+            
+            <p>Bibliography:</p>
+            
+            <p>Gutiérrez Ramón Arq.- Urban and Architectural Evolution of Paraguay 1537-1911. Comuneros Editions 1983 Asunción Paraguay -pages 225-226</p>
+            
+            <p>www.mopc.gov.py</p>
+            
+            <p>FEPASA-Archive of the Central Railway of Paraguay</p>
+            
+            <p>National Secretariat of Culture-General Directorate of Cultural Heritage-Heritage Registry Directorate-Cultural Heritage Registry Department</p>
+            
+            <p>Municipality of Asunción-General Directorate of Urban Development-Directorate of Planning U.-Department of Cultural Heritage</p>
+            
+            <p>www.portalguarani.com - Javier Yubi, Historical Railway Museum</p>
+            
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

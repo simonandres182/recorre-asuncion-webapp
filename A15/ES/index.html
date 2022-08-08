@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/ES','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Estación Central de Ferrocarriles del Paraguay</h2>
+            <p><img src="A15.jpg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A15ES.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+            
+            <p>La iniciativa de contar con una línea ferroviaria en el Paraguay, surgió del Presidente Carlos Antonio López en el año 1854, la primera línea ferroviaria fue de Asunción a Villarrica.</p>
+            <p>Las obras se iniciaron en el año 1857, y se habilitó el tramo desde Arsenales hasta la rivera (cercanías del Puerto de Asunción) y en el año 1859 llegaba hasta la Estación San Francisco 
+                ubicada frente a la actual Plaza Uruguaya. En dicho año, se inició la construcción de la Estación Central, bajo la dirección del Maestro Arquitecto Alonso Taylor, quien también dirigió
+                 la construcción de las demás estaciones ferroviarias. Alessandro Ravizza ha tenido notable participación en la decoración interna y externa del edificio.</p>
+            
+            
+            <p>La iniciativa de contar con una línea ferroviaria en el Paraguay, surgió del Presidente Carlos Antonio López en el año 1854, el mismo, contrató a profesionales ingenieros de 
+                nacionalidad inglesa (G. Paddison y John W. Whitehead) quienes tuvieron a su cargo la realización de los estudios preliminares y del proyecto para la habilitación de la primera
+                 línea ferroviaria: Asunción –Villarrica</p>
+            <p>En el año 1861, se inaugura el primer tramo desde la Estación Central de Asunción hasta el barrio Trinidad y seis meses después se inauguraba la extensión hasta la ciudad de 
+                Luque. En el año 1862, se extiende hasta Areguá. Posteriormente, a través de los años llegó hasta Encarnación. En el año 1863, las crónicas de entonces destacaban a la Estación 
+                como "un punto de recreo" admirando "los espaciosos salones con asientos y música con que se obsequia a los paseantes todos los domingos".</p>
+            <p>El carácter del edificio en estudio, incluye desde reminiscencias neo-góticas a la integración de propuestas claramente paraguayas como ser: Las galerías laterales, y se lo 
+                define como una de las obras de mayor interés dentro de la Arquitectura del período del gobierno de Don Carlos Antonio López.</p>
+            <p>Cuenta con un Museo desde el año 1992, donde se exhiben muebles que contienen documentos y voluminosos libros técnicos y de contabilidad, además, sobresalen en
+                 los muebles las iniciales. FCCP tallados. En una de las vitrinas, se exhiben planos originales de las vías desde Asunción hasta el Ferry boat de Encarnación, 
+                 También se exhiben los planos originales de las locomotoras, Se observan además, relojes de pared, cajas fuertes traídas de Inglaterra, catálogos fotográficos de las 
+                 locomotoras y vagones diseñados para el Paraguay entre otras cosas. También en el andén principal se encuentra la Locomotora restaurada (año 2000)</p>
+            
+            <p>Bibliografía:</p>
+            <p>Gutiérrez Ramón Arq.- Evolución Urbanística y Arquitectónica del Paraguay 1537-1911. Ediciones Comuneros 1983 Asunción Paraguay -páginas 225-226</p>
+            <p>www.mopc.gov.py</p>
+            <p>FEPASA-Archivo del Ferrocarril Central del Paraguay </p>
+            <p>Secretaría Nacional de Cultura-Dirección General de Patrimonio Cultural-Dirección de Registro de Patrimonio-Departamento de Registro de Patrimonio Cultural</p>
+            <p>Municipalidad de Asunción-Dirección General de Desarrollo Urbano-Dirección de Planeamiento U.-Departamento de Patrimonio Cultural </p>
+            <p>www.portalguarani.com - Javier Yubi, Museo Histórico Ferroviario</p>
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
