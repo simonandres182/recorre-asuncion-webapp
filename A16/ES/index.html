@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/ES','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Iglesia Nuestra Señora de la Encarnación</h2>
+            <p><img src="A16.jpg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A16ES.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+            
+            <p>La Iglesia, bajo advocación mariana de Nuestra Señora de la Encarnación, se halla ubicada en una de las lomas de la ciudad, conocida como Volo Cué; es denominada también 
+                “Iglesia andariega” pues tuvo la peculiaridad de tener varios asentamientos antes de su ubicación actual.</p>
+            <p>Este edificio fue diseñado por el Arquitecto italiano Juan Colombo en el año 1893 y realizó la dirección de obras hasta su fallecimiento en el año 1902. 
+                Durante la contienda de la Guerra del Chaco (Años 1932-1935) el Templo La Encarnación, se utilizó como Hospital de sangre.</p>
+            
+            <p>Sus diferentes ubicaciones fueron:</p>
+            <p>Primer Asentamiento- Años: 1539-1543, estuvo ubicada en la Barranca de la Bahía de Asunción, edificado por el Capitán Domingo Martínez de Irala. </p>
+            <p>Segundo Asentamiento- Años: 1543-1697, estuvo ubicado en el mismo lugar donde estaba la Casa Fuerte. </p>
+            <p>Tercer Asentamiento- Años: 1697-1797, estuvo ubicado sobre las ruinas de la Capilla de Santa Lucía.</p>
+            <p>Cuarto Asentamiento- Años: 1797-1818, estuvo en el predio comprendido en las calles La Encarnación (Hoy calle 15 de Agosto) y Presbítero Hernández (Hoy calle Palma).</p>
+            <p>Quinto Asentamiento- Años: 1818-1889 debido al derrumbe de la cuarta ubicación, tuvo que trasladarse al Convento de los Dominicos, pues dicha orden religiosa 
+                fue expulsada del país por el Dr. Gaspar Rodríguez de Francia, en esa época la iglesia sufrió refacciones, el Dr. Francia lo dedica a Parroquial luego de expulsar
+                 a los Dominicos e incautarse de sus bienes, demoliendo la antigua Iglesia y entregando al efecto la de Santo Domingo, En 1842 El Presidente Don Carlos Antonio López,
+                  edificó adyacente una escuela de primeras letras. La Iglesia de La Encarnación sirvió de Catedral durante los años 1842-1851. </p>
+            <p>Sexto Asentamiento- Años: 1889 a la actualidad, ubicado en la loma sobre las calles Eduardo Víctor Haedo (Ex calle Pilcomayo) 14 de Mayo y Humaitá.</p>
+            <p>Desde el punto de vista de la tecnología aplicada: El edificio, no posee las características de las demás iglesias del Paraguay, no pudiendo enmarcarse dentro de un 
+                estilo definido, además ha quedado inconclusa su terminación. La construcción, es de estilo romano -corintio, similar al de las catedrales europeas.</p>
+            <p>Para su construcción se utilizaron materiales propios de nuestro país: Piedras para cimientos, ladrillos y tejas de material cerámicos para los grandes muros
+                 y cubierta, maderas para tiranterías, entre otros. Se encuentran los muros revocados en su interior no así en el exterior del edificio.</p>
+            
+            <p>Bibliografía: </p>
+            <p>Gutiérrez Ramón, Arq. Evolución Urbanística y Arquitectónica del Paraguay-1537-1911. Ediciones Comuneros Asunción Paraguay. Páginas 214-215 </p>
+            <p>www.mopc.gov.py </p>
+            <p>Secretaría Nacional de Cultura (SNC) -Dirección General de Patrimonio Cultural Dirección de Registro de Patrimonio-Departamento de Registro de Patrimonio Cultural</p>
+            <p>Municipalidad de Asunción-Dirección General de Desarrollo Urbano-Dirección de Planeamiento U.-Departamento de Patrimonio Cultural</p>
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
