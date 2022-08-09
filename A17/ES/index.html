@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recorre Asunción</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#botonCambiarIdioma").click(function () {
+                var now = new Date();
+                var time = now.getTime();
+                var expireTime = time + 1000 * 36000;
+                now.setTime(expireTime);
+                document.cookie = "idioma='';expires="+now.toUTCString()+';path=/';
+                var url = window.location.href.replace('/ES','');
+                window.location.href = url;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Recorre Asunción</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto">
+                    <a href="#" class="nav-item nav-link" id="botonCambiarIdioma">Idioma - Language</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="p-5 my-4 bg-light rounded-3">
+
+            <h2>Ex Casona de Madame Lynch</h2>
+            <p><img src="A17.jpg" class="img-fluid" /></p>
+            <p><audio controls>
+                    <source src="A17ES.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio></p>
+            
+            <p>Edificio de la Facultad de Derecho y Ciencias Sociales</p>
+            <p>Denominación actual:  Posgrado de carreras de Derecho y Ciencias Sociales (UNA)</p>
+            <p>Otras denominaciones: Ex Residencia de Madame Lynch</p>
+            
+            <p>Aspectos Históricos</p>
+            <p>Los orígenes de este predio se remontan al año 1853, cuando la propiedad abarcaba toda la manzana comprendida entre las calles: Eligio Ayala, Yegros, 
+                Mariscal Estigarribia e Iturbe. En dicha manzana, vivió el último obispo diocesano de la época colonial: Fray Francisco Pedro Benito García de Panés.</p>
+            <p>Esta obra es una de las singulares del período de Don Carlos Antonio López, la cual, mantiene los lineamientos de la Arquitectura colonial, con ciertos 
+                elementos ornamentales neoclásicos en su fachada principal. </p>
+            <p>El Mariscal Francisco Solano López, adquirió la propiedad en subasta pública y mandó a edificar la casona y obsequiar a la irlandesa Elisa Alicia Lynch, 
+                su pareja de entonces, para su residencia.</p>
+            <p>Algunos datos refieren que, la edificación ubicada sobre calle Mariscal Estigarribia esquina Yegros, que, el proyecto y construcción del edificio se atribuye a 
+                Alessandro Ravizza, otros datos refieren que el proyecto inicial, fue de Francisco Wisner de Morgensten, Ingeniero de nacionalidad Húngara, quien realizó el trabajo de la
+                 edificación ubicada sobre la ex calle San Blás (Hoy calle Yegros), allí se hallaba ubicado el bloque principal (de dos plantas) y sobre la actual calle Mariscal Estigarribia
+                  esquina Yegros se hallaba ubicado el bloque que correspondía al sector social o salones de recepciones, donde Madama Lynch organizaba los almuerzos, cenas, bailes, etc., con el
+                   hermoso patio central y frondoso jardín. A estas recepciones concurrían invitados diplomáticos y gente de Arte y Letras de la época.</p>
+            <p>Cuando las fuerzas Aliadas invadieron la capital paraguaya, la casona fue saqueada y ocupada por las tropas brasileñas, y se convirtió en Hospital (año 1869). Posteriormente,
+                 una vez finalizada la contienda bélica en el año 1870, el gobierno provisorio, confiscó los bienes del Mariscal López, declarándolos "Propiedad de la Nación" entre ellos la
+                  casona de Madame Lynch.</p>
+            <p>Durante el gobierno del Pdte. de la República de entonces: Don Salvador Jovellanos, se vendieron las propiedades fiscales, y entre ellas la casa Lynch, que fue adquirida por la 
+                firma Travassos &Cía. Luego, esta empresa, en el año 1881, vendió la propiedad al Ministerio de Educación (colegio Nacional) el cual, ensanchó más dicho terreno. En el año 1889, 
+                la antigua casa Lynch, por disposición del Consejo Secundario y Superior, pasó a ser sede de la Universidad Nacional.</p>
+            <p>En la Post Guerra de la Triple Alianza, en el año 1870, toda la edificación, fue el recinto donde se organizaron muchos jóvenes que honraron al país en su resurgimiento luego de la
+                Guerra del 70.</p>
+            <p>Descripción Formal: Desde el punto de vista de la tecnología aplicada: Se observa el patrón edilicio de arquitectura colonial con detalles del neoclasicismo. Cerramientos de
+                 muros de mampostería de ladrillos cerámicos y revocados. Las organizaciones espaciales son simples. Se destacan elementos ornamentales modificados, como también las dimensiones
+                  originales de los vanos. Se observa galería interna que constituyen elementos formales de la arquitectura paraguaya.</p>
+            <p>Tipología: Planta arquitectónica en U con patio interno</p>
+            <p>Descripción El edificio: Se halla implantado en una importante esquina del Centro Histórico de la ciudad, no posee ochava como toda construcción de la época francista,
+                 cuenta con edificaciones linderas sobre la calle Mariscal Estigarribia. Se ha construido sobre límite municipal o vereda. Según antecedentes La edificación, inicialmente estaba 
+                 conformado por muros de adobe, galería interna con pilares de madera, techo de tejas y tejuelas coloniales sobre tiranterías de madera (vigas, tirantes alfajías).
+                  Posteriormente, con el paso de los años, se fue ampliando la construcción y fueron anexando elementos constructivos como muros de mampostería de ladrillos cerámicos y 
+                  revocados, bovedillas, herrajes en las aberturas de madera, pisos de baldosas calcáreas, los pilares de madera fueron reemplazados por pilares de mampostería, entre otros. 
+                  Se debe resaltar que el edificio fue construido sobre línea municipal y no tiene ochava.</p>
+            <p>Posteriormente se anexaron nuevas construcciones en el predio como ser: El Colegio</p>
+            <p>Nacional Asunción Escalada, y la Facultad de Ciencias Sociales.</p>
+            
+            <p>Observaciones Según datos históricos: Luego de la ocupación de la ciudad de Asunción en el año 1869, el edificio fue utilizado como hospital por el Ejército brasileño, fue
+                 un período en que dicha casona fue bastante depredada.  Luego, ya en poder del Estado Paraguayo, la propiedad fue desmembrada en dos, quedando el sector sobre
+                  la calle Eligio Ayala, destinado al actual Colegio Nacional Asunción Escalada y el sector que se encuentra sobre la calle Mariscal Estigarribia esquina Yegros 
+                  fue ocupado a principios del siglo XX, para sede de la Facultad de Derecho y Ciencias Sociales sirviendo también de sede a la Biblioteca Nacional y Rectorado de la
+                   Universidad Nacional de Asunción.</p>
+            <p>En el año 1957 fue sede de la Facultad de Arquitectura por unos años. Hoy día en dicho edificio funcionan: Postgrado de Derecho y Ciencias Sociales de la UNA. y 
+                Facultad de Ciencias Sociales y Políticas de la UNA.</p>
+            <p>Bibliografía</p>
+            <p>Gutiérrez, Ramón. Evolución Urbanística y Arquitectónica del Paraguay. 1537-1911. Ediciones Comuneros. Asunción, Paraguay.  Página consultada 223</p>
+            <p>Barreto Valinotti Ana. Obra Elisa Alicia Lynch. Colección Protagonistas Nº 4</p>
+            <p>www.una.py>investigacion>revista>vol.3</p>
+            <p>Luis Verón-Periodista e Historiador, Ensayista de diario abc color-20/X/2002</p>
+            <p>Secretaría Nacional de Cultura- Dirección General de Patrimonio Cultural-Dirección de Registro de Patrimonio - Departamento de Registro de Patrimonio Cultural</p>
+            <p>Municipalidad de Asunción-Dirección General de Desarrollo Urbano- Dirección de Planeamiento Urbano- Departamento de Patrimonio Cultural</p>
+            
+            <p>Vinculación con otras fichas</p>
+            <p>Vinculación Ficha Nacional de Identificación del Bien Cultural Inmueble-Dirección de Registro de Patrimonio-Dirección General de Patrimonio Cultural de la
+                 Secretaría Nacional de Cultura. Ficha de Inventario de edificios Año 1990-Oficina Centro Histórico - Municipalidad de Asunción.</p>
+            <p>Equipo de trabajo</p>
+            <p>Catalogador Arq. Mirtha Ibarra C.</p>
+            <p>Colaboradores Arq. Clarisse Insfrán Echauri.</p>
+            <p>Otros Colaboradores Func. Gustavo Barrios Alvarez.</p>
+            <p>Ente componente Dirección de Registro de Patrimonio</p>
+            <p>Fecha recolección de datos 30/04/2020</p>
+            <p>Operador Clarisse Insfrán</p>
+            <p>Fecha de registro 30/04/2020</p>
+                
+
+        </div>
+
+        <hr>
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Copyright &copy; 2022</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.senatur.gov.py/" class="text-dark">SENATUR</a>
+                    <span class="text-muted mx-2">|</span>
+                    <a href="https://play.google.com/store/apps/developer?id=Museo+Interactivo" class="text-dark">Museo
+                        Interactivo</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
